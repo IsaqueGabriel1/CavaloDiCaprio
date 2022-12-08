@@ -1,0 +1,353 @@
+/**/
+/*Configurações iniciais da tela*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*tudo dentro da div nav será flexivel*/
+#nav{
+    border-bottom: 2px solid #411818;
+}
+
+#menu{
+    display: none;
+}
+
+/*Todos os itens dentro da div nav, ficaram um ao lado do outro, como numa linha*/
+#nav ul, li{
+    display: flex;
+    flex-direction: row;
+    background: rgb(255, 255, 255);
+    color: #411818;
+}
+
+.linha{
+    margin: 25px;
+    font-size: 20px;
+}
+
+.linhaH{
+    margin: 25px;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.linhaH span{
+    color: red;
+}
+/**/
+
+#imgCavalo{
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#liCavalo{
+    margin-right: 3%;
+    margin-left: 36%;
+}
+
+/*Nessa área será colocado as informações através do ajax*/
+/*Tudo dentro desse container será flexivel, ou seja, vai corresponder as medidas da div pai*/
+#corpo{
+    display: flex;
+    /*Os item vão ficar alinhados ao centro, na horizontal e vertical*/
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+    /*Colocando imagem direto do css*/
+    background: rgb(44, 1, 1);
+    /*A imagem não deve se repetir*/
+    background-repeat: no-repeat;
+    /*A imagem deve ficar com o tamanho total da tela*/
+    background-size: cover;
+    overflow: auto;
+}
+
+/*Os itens desse container ficaram ao centro*/
+#conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 700px;
+}
+/*Os iten ficaram alinhados ao centro, tanto na vertical tanto na horizontal*/
+/*Os item vão ficar um abaixo do outro*/
+#Produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+}
+
+#sessaoProdutos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo{
+    margin-bottom: 100px;
+    color: #ffff;
+    cursor:default;
+}
+#titulo:hover{
+    text-decoration:underline;
+}
+
+#sessaoProdutos #produto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid;
+    background: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+#produto1:hover{
+    box-shadow: 5px 10px black;
+}
+
+#imgP1{
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+#descricaoP1 span{
+    color: red;
+}
+#btnComprar{
+    background: #411818;
+    color: #ffff;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+#btnComprar:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+#form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;    
+    height: 400px;
+    background-image: linear-gradient(#3f0505,#6e0e0e);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, textarea{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+h1{
+    color: white;
+}
+
+#btnEnviar{
+    background: #411818;
+    color: #ffff;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#btnEnviar:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+#valEmail{
+    width: 300px;
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+}
+
+#sobre{
+    width: 600px;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#sobre:hover{
+    box-shadow: 5px 10px;
+    transition: 1s;
+}
+
+#sobre p{
+    text-align: justify;
+}
+
+#sobre h1{
+    color: #411818;
+    padding: 10px;
+}
+#sobre h1 span{
+    color: red;
+}
+
+.forne{
+    width: 700px;
+    height: 102px;
+    margin-top: 10px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#imgForne{
+    width: 200px;
+    height: 100px;
+    border-radius: 9px;
+    transition: 1s;
+    background: white;
+    border: 1px solid black;
+}
+
+#descricao{
+    width: 100%;
+    height: 100px;
+    background: wheat;
+}
+#amazon{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    background-image: linear-gradient(#3f0505,#6e0e0e);
+    color: white;
+}
+#amazon p {
+    padding: 10px;
+}
+
+#contato{
+    background-image: linear-gradient(#3f0505,#6e0e0e);
+    padding: 40px;
+    color: white;
+    border-radius: 10px;
+}
+
+#imgContato{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+}
+#contato div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    border-top: 2px solid #411818;
+    background: white;
+    color: #411818;
+}
+
+#menu1{
+    display: none;
+    position: absolute;
+    width: 170px;
+    top: 8%;
+    right: 0%;
+    height: 280px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Menulinha{
+    font-size: 20px;
+    padding: 10px;
+    background: transparent;
+}
+
+.Menulinha:hover{
+    background: #41181828;
+}
+a{
+    color: #411818;
+}
+
+#novidades{
+	background: white;
+	color: black;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 20px;
+    margin-top: 10px;
+	width: 400px;
+    
+}
+#novidades h1{
+
+    color: black;
+}
+
+#h1Novidades{
+	text-align: center;
+	margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+#containerNovidades{
+    margin-top: 300px;
+}
+
+@media only screen and (max-width: 1024px) {
+   
+   #sessaoProdutos #produto1{
+    width: 150px;
+   }
+   #imgP1{
+    width: 100px;
+   }
+   #nav{
+    font-size: 10px;
+   }
+   .linha{
+    display: none;
+   }
+   #linkMenu{
+    display: block;
+   }
+   #menu1{
+    display: block;
+   }
+  }
+/*Terminar o menu linhaSubMenu*/

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	font-family:arial;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tituloLogin{
+	font-size:40px;
+    color: white;
+}
+#divTitulo{
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+
+#divMenu{	
+	background:brown;
+    text-align: end;
+    padding: 10px;
+	color:lightyellow;
+}
+
+#divMenu a{	
+		color:lightyellow;
+		text-decoration:none;
+}
+
+#containerLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background: rgb(77, 3, 3);
+    border: 3px solid black;
+}
+
+input, #txtConteudo, #txtPedido{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#btnSub{
+    width: 100px;
+}
+
+#frmLogin{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#consultaPedido{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    color: rgb(70, 14, 14);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(70, 14, 14);
+}
+#funcoes{
+    margin-top: 5px;
+}
+
+#formConsulta{
+    width: 500px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background:brown;
+    padding: 10px;
+}
+#email, #txtTitulo, #txtConteudo, #txtEmail, #txtPedido{
+    margin: 10px;
+}
+.btnInp{
+    width: 100px;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(70, 14, 14);
+    border-radius: 5px;
+}
+
